@@ -1,0 +1,296 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+}
+header h1{
+  color:blue;
+}
+
+
+.logo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  border: 3px solid #ff5500;
+  background-color: aqua;
+  padding: 5px;
+}
+
+.search-bar {
+  margin-top: 15px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #023e8a;
+  text-align: center;
+  padding: 15px;
+  position: sticky ;
+  z-index: 1000 ;
+  top: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffd60a;
+}
+
+/* Cart Section */
+    .cart-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.cart-link:hover {
+    text-decoration: underline;
+    background: #ff6b00;
+    color: white;
+}
+
+.cart-count {
+    background: #ff6b00;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+/* Products Section */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-card h2 {
+  color: #0077b6;
+  margin: 10px 0;
+}
+
+.product-card button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #023e8a;
+}
+
+
+
+footer { 
+   background: linear-gradient(135deg, #0077b6, #0096c7);
+   padding:10px;
+  bottom: 0;
+  color:black;
+  text-align: center;
+  font-weight: 1000;
+  position:sticky;
+  z-index: 1000;
+} 
+   /* Default styles */
+   body {
+     font-size: 14px;
+     
+   }
+   
+   /* Styles for screens smaller than 768px (e.g., mobile devices) */
+   @media (max-width: 768px) {
+     body {
+       font-size:26px;
+      
+     }
+    .placeholder {
+       font-size: 4px;
+     }
+     
+    .navbar a{
+      font-size:10px;
+      
+    }
+   .header h1{
+     font-size:32px;
+   } 
+  .header h2{
+    font-size: 20px;
+     color: black;
+  }
+ .header h3{
+   font-size: 15px;
+   color: #000;
+ }
+  .header p{
+    font-size:13px;
+  }
+ .products h2{
+   font-size: 16px;
+ }
+.products p{
+  font-size:12px;
+}
+.products button{
+    font-size: 10px;
+  }
+  .products {
+  display: grid;
+  padding: 70px;
+}
+footer p{
+  font-size:12px;
+   }
+.search-bar{
+  font-size:4px;
+} 
+.cart {
+    background-color: #4F88AF;
+    padding: 20px;
+    border: 1px solid darkblue;
+    width: 300px;
+    margin-left: 10px;
+    position:sticky;
+    z-index:1000;
+    bottom:20px ;
+    border-radius:10px;
+
+}
+
+.cart h2 {
+    margin-top: 0;
+    
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    margin-top: 10px;
+}
+
+}
+   /* Styles for screens larger than 1200px (e.g., desktops) */
+   @media (min-width: 1200px) {
+     body {
+       font-size: 20px;
+     }
+
+    .placeholder {
+       font-size: 2px;
+     }
+     header{
+       
+       
+     }
+    .navbar a{
+      font-size:12px;
+      
+    }
+   .header h1{
+     font-size:32px;
+   } 
+  .header h2{
+    font-size: 18px;
+  }
+ .header h3{
+   font-size: 14px;
+ }
+  .header p{
+    font-size:16px;
+  }
+ .products h2{
+   font-size: 13px;
+ }
+.products p{
+  font-size: 11px;
+}
+.products button{
+    font-size: 10px;
+  }
+  .products {
+  display: grid;
+  padding: 70px;
+}
+footer p{
+  font-size:15px;
+   }
+.search-bar{
+  font-size:5px;
+}
+} 
+
